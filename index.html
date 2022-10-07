@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="downloads/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+              <li><a href="downloads/diagram.png">Diagrams</a></li>
+              <li><a href="downloads/videoplayback.mp4">Video recording</a></li>
+              <li><a href="downloads/videoplayback.mp3">Audio recording</a></li>
+          </nav>
+        <h1 style="text-align:center;">Meeting Minutes Record</h1>
+    </header>
+    <main>
+        <img src="https://img.freepik.com/premium-vector/meeting-office-interior-business-conference-room-with-people-managers-working-team-cartoon-interior_80590-7766.jpg?w=1480" 
+             alt="Meeting Minutes"
+             width="800"
+        />
+        <section>
+            <h2>Meeting Information</h2>
+            <nav>
+                <ul>
+                    <li><b>Date</b>: 10/05/2022</li>
+                    <li><b>Time</b>: 8 - 9PM</li>
+                    <li><b>Location</b>: Zoom</li>
+                </ul>
+            </nav>
+        </section>
+        <hr>
+
+        <div>
+        <section>
+            <h2>Attendance List</h2>
+            <br>
+            <h4>CSE 110 - Group 38</h3>
+            <ul>
+                <li><input type="checkbox" checked /> Thu Mai</li>
+                <li><input type="checkbox" checked /> Allision Turner</li>
+                <li><input type="checkbox" checked /> Divyam Rana</li>
+                <li><input type="checkbox" checked /> Hieu Pham</li>
+                <li><input type="checkbox" checked /> John Adams</li>
+                <li><input type="checkbox" checked /> Ken</li>
+                <li><input type="checkbox" checked /> Rachel Lin</li>
+                <li><input type="checkbox" checked /> Tung Nguyen</li>
+                <li><input type="checkbox" /> Vedant H. Goradia</li>
+                <li><input type="checkbox" checked /> Zixuan Chen</li>
+            </ul>
+        </section>
+        </div>
+        <hr>
+
+        <div>
+        <section>
+            <h2>Agenda</h2>
+            <ol>
+                <li>Discuss about things that were unfinished from last meeting</li>
+                <li>Discuss about things that are new business that need to be talked about</li>
+                <li>Respond questions and concerns from attendees</li>
+                <li>Recordings for those who are unable to participate on time</li>
+            </ol>
+        </section>
+        </div>
+        <hr>
+
+        <div>
+        <section>
+            <h2>Past Meeting Notes</h2>
+            <p> During the first meeting, we have discussed about the <em>roles</em> of group members
+                in the project to clarify what specific work associated with them in the 
+                entire quarter
+            </p>
+            <p>
+                Then, we moved on to the popcorn <em>introduction</em> among everyone and their questions
+                to each other according to their brief sharings on Slack.
+            </p>
+            <p>
+                Finally, in order to resolve the <em>scheduling conflicts</em> for everyone, we 
+                decide to let every individual mark their favorable time for 
+                upcoming meetings and announce a fixed time later when all records are ready.
+                Participants should mark their available schedules through: 
+                <a href="https://www.when2meet.com/?17164556-cwJHN">When2Meet</a>
+            </p>
+            <img src="downloads/diagram.png" width="631" height="403">
+            <p>
+                <i>For more information, direct message to: <details><summary>TA</summary>Teaching Assistant - Allision Turner</details></i>
+            </p>
+        </section>
+        </div>
+        <hr>
+
+        <div>
+        <section>
+            <h2>Upcoming Meeting Notes</h2>
+            <ul>
+                <li>Correct timeline for future discussions will be posted later on <strong>Slack</strong></li>
+                <li>Weekly attendance and participation are <strong>required</strong> for credit and success in the class</li>
+                <li>Everyone should prepare the answer for the branstorming question with dedicated
+                    ideas to present in the next meeting so we can finalize the best business
+                    for the project
+                </li>
+            <li>
+            <label for="activities-choice">What should we do in the next meeting:</label>
+            <input list="activities-options" id="activities-choice" name="activities-choice">
+
+            <datalist id="activities-options">
+                <option value="Among Us">
+                <option value="Anime">
+                <option value="Sports">
+                <option value="Internships">
+                <option value="Don't know/Don't care">
+            </datalist>
+            </li>
+            </ul>
+        </section>
+        </div>
+        <hr>
+
+        <div>
+        <section>
+            <h2>Audio/Video</h2>
+            <p>The meeting has been <span style="color:pink;font-weight:bold">recored</span> and the audio and video are <span style="color:pink;font-weight:bold">uploaded</span> below for everyone's reference</p>
+            <figure>
+                <figcaption><b>Video recording:</b></figcaption>
+                <video
+                    controls
+                    src="downloads/videoplayback.mp4">
+                        <a href="downloads/videoplayback.mp4">
+                            Download video
+                        </a>
+                    </video>
+            </figure>
+            <figure>
+                <figcaption><b>Audio recording:</b></figcaption>
+                <audio
+                    controls
+                    src="downloads/videoplayback.mp3">
+                        <a href="downloads/videoplayback.mp3">
+                            Download audio
+                        </a>
+                </audio>
+            </figure>
+        </section>
+        </div>
+        <hr>
+
+        <div>
+        <section>
+            <h2>Questions/Concerns/Comments</h2>
+            <label for="meeting-select">Select your meeting type:</label>
+            <select name="meeting" id="meeting-select">
+                <option value="">--Please select an option--</option>
+                <option value="Zoom">Zoom</option>
+                <option value="In person">In person</option>
+                <option value="Both are fine.">Both are fine.</option>
+            </select>
+            <br /> 
+            <br />
+            <label for="meeting-date">Your prefered meeting date next week:</label>
+            <input type="date" id="meeting-date" name="meeting-week2"
+                   value="2022-10-10"
+                   min="2022-10-10"
+                   max="2022-10-16">
+            <p>
+                <i>If you, individually, could build whatever you wanted, with no constraints on 
+                time or resources, what would you build?</i>
+            </p>
+            <p><i>What is your current experience in programming?</i></p>
+            <input type="radio" id="beginner" name="level" value="beginner">
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="intermediate" name="level" value="intermediate">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" id="advance" name="level" value="advance">
+            <label for="advance">Advance</label><br>
+            <br />
+            <label for="story">Tell us your comments about the previous meeting:</label>
+            <textarea id="story" name="story"
+                        rows="5" cols="110"
+                        placeholder="Comment text.">
+            </textarea>
+        </section>
+        </div>
+    </main>
+    <hr>
+
+    <footer>
+        <h3>Subcription</h3>
+        <form onsubmit="alert('Your email has been recorded.')">
+            <input type="text" placeholder="Enter Email Address" />
+            <button>Submit</button>
+        </form>
+        <br />
+        <fieldset>
+            <legend> SIGN UP: </legend>
+            Name:<input type="text"><br>
+            Student ID:<input type="text">
+        </fieldset>
+    </footer>
+</body>
+</html>
