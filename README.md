@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://maibaothu.github.io/Lab2_Starter/
+# fa22-cse110-lab3
+https://maibaothu.github.io/fa22-cse110-lab3/
