@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/png" href="downloads/favicon.png">
+    <!-- External CSS: background color to title and sections -->
+    <link rel="stylesheet" href="colorsheet.css">
 </head>
 <body>
+    <!-- position: fixed -->
+    <div style="text-align: right; background-color: rgb(110, 94, 78); font-family: 'Pacifico', cursive; color:aliceblue; position: fixed;"> Hello folks! How is your day? </div>
+    <!-- Internal CSS: h1 color -->
+    <style>
+        h1 {
+        background-color: rgb(109, 71, 83);
+        color: aliceblue; /* text color */
+        position: static; /* position static */
+        margin: auto;
+        }
+    </style>
     <header>
-        <nav class="menu">
-              <a href="downloads/diagram.png">Diagrams</a>
-              <a href="downloads/videoplayback.mp4">Video recording</a>
-              <a href="downloads/videoplayback.mp3">Audio recording</a>
-          </nav>
         <h1 style="text-align:center;">Meeting Minutes Record</h1>
     </header>
     <main>
@@ -20,6 +28,7 @@
              alt="Meeting Minutes"
              width="800"
         >
+        <div class="box-meeting-info">
         <section>
             <h2>Meeting Information</h2>
                 <ul>
@@ -29,9 +38,10 @@
                 </ul>
                 <em> Wednesday, October 5th, 2022 at 8 PM - 9 PM.</em>
         </section>
+        </div>
         <hr>
 
-        <div>
+        <div class="box-attendance">
         <section>
             <h2>Attendance List</h2>
             <br>
@@ -45,27 +55,25 @@
                 <li><input type="checkbox" checked > Ken</li>
                 <li><input type="checkbox" checked > Rachel Lin</li>
                 <li><input type="checkbox" checked > Tung Nguyen</li>
-                <li><input type="checkbox" > Vedant H. Goradia</li>
+                <li id="absent"><input type="checkbox" > Vedant H. Goradia</li>
                 <li><input type="checkbox" checked > Zixuan Chen</li>
             </ul>
         </section>
         </div>
         <hr>
 
-        <div>
-        <section>
+        <div class="box-agenda">
+        <section class="grid">
             <h2>Agenda</h2>
-            <ol>
-                <li>Discuss about things that were unfinished from last meeting</li>
-                <li>Discuss about things that are new business that need to be talked about</li>
-                <li>Respond questions and concerns from attendees</li>
-                <li>Recordings for those who are unable to participate on time</li>
-            </ol>
+                <div class="grid1"><li>Discuss about things that were unfinished from last meeting</li></div>
+                <div class="grid2"><li>Discuss about things that are new business that need to be talked about</li></div>
+                <div class="grid3"><li>Respond questions and concerns from attendees</li></div>
+                <div class="grid4"><li>Recordings for those who are unable to participate on time</li></div>
         </section>
         </div>
         <hr>
 
-        <div>
+        <div class="box-past">
         <section>
             <h2>Past Meeting Notes</h2>
             <p> During the first meeting, we have discussed about the <em>roles</em> of group members
@@ -92,10 +100,18 @@
         </div>
         <hr>
 
-        <div>
+        <!-- Internal CSS -->
+        <style>
+            .list {
+                /* display inline block */
+                background-color: rgb(195, 191, 205);
+                display: inline-block;
+            }
+        </style>
+        <div class="box-upcoming">
         <section>
             <h2>Upcoming Meeting Notes</h2>
-            <ul>
+            <ul class="list">
                 <li>Correct timeline for future discussions will be posted later on <strong>Slack</strong></li>
                 <li>Weekly attendance and participation are <strong>required</strong> for credit and success in the class</li>
                 <li>Everyone should prepare the answer for the branstorming question with dedicated
@@ -119,9 +135,10 @@
         </div>
         <hr>
 
-        <div>
+        <div class="box-media">
         <section>
             <h2>Audio/Video</h2>
+            <!-- Inline CSS: text color -->
             <p>The meeting has been <span style="color:pink;font-weight:bold">recored</span> and the audio and video are <span style="color:pink;font-weight:bold">uploaded</span> below for everyone's reference</p>
             <figure>
                 <figcaption><b>Video recording:</b></figcaption>
@@ -147,9 +164,10 @@
         </div>
         <hr>
 
-        <div>
+        <div class="box-question">
         <section>
             <h2>Questions/Concerns/Comments</h2>
+            <br>
             <label for="meeting-select">Select your meeting type:</label>
             <select name="meeting" id="meeting-select">
                 <option value="">--Please select an option--</option>
@@ -164,9 +182,12 @@
                    value="2022-10-10"
                    min="2022-10-10"
                    max="2022-10-16">
+
             <p>
+                <span class="block" style="text-align: center;">
                 <i>If you, individually, could build whatever you wanted, with no constraints on 
                 time or resources, what would you build?</i>
+                </span>
             </p>
             <p><i>What is your current experience in programming?</i></p>
             <input type="radio" id="beginner" name="level" value="beginner">
@@ -182,6 +203,22 @@
                         placeholder="Comment text.">
             </textarea>
         </section>
+
+
+        <div>
+            <a attribute="quotehead">Quote of the day:</a><br>
+            <a attribute="quote">Life is the art of drawing without an eraser. Share this Quote </a><a attribute="author">[ John W Gardner ]</a><br>
+            <a attribute="quote">To image is everything, to know is nothing at all</a><a attribute="author">[Anatole France]</a> <br>
+            <a attribute="quote">Nature is the art of God. </a><a attribute="author">[Dante Alighieri]</a><br>
+        </div>
+        <div>
+            <p> This is a block of JAVA code:</p>
+            <code>public class HelloWorld {<br>
+                <div class="indent"><code>public static void main(String[] args) <br></code>
+                <div class="indent2"><code>    {System.out.println("Hello, World");}<br></code>
+            }<br></code>
+            <span class="extreme">WEB CSS INTEGRITY CHECK - SPAN MINWIDTH CHECK: OK</span>
+            
         </div>
     </main>
     <hr>
@@ -198,6 +235,21 @@
             Name:<input type="text"><br>
             Student ID:<input type="text">
         </fieldset>
+        <br>
+        <nav class="menu">
+            <div class="children1"><a href="downloads/diagram.png">Diagrams</a>
+                <p>The diagram to visualize the contents in meeting </p>
+                </div>
+            <div class="children2"><a href="downloads/videoplayback.mp4">Video recording</a>
+                <p>The video for absent attendees</p>
+                </div>
+            <div class="children3"><a href="downloads/videoplayback.mp3">Audio recording</a>
+                <p>The audio for listeners
+                    </p>
+                </div>
+        </nav>
+        <!-- display none -->
+        <div style="display: none;">Thank you</div>
     </footer>
 </body>
 </html>
